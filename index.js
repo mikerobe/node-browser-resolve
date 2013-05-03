@@ -139,6 +139,7 @@ function resolve(id, opts, cb) {
         var full = resv(id, {
             paths: opts.paths,
             basedir: base,
+            extensions: ['.js','.coffee'],
             packageFilter: function(info) {
                 if (opts.packageFilter) info = opts.packageFilter(info);
 
